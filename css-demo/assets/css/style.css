@@ -1,0 +1,20 @@
+body{
+    background-color:rgb(156, 126, 190);
+    font-family: 'Lora', serif;
+}
+
+main{
+    background-color:aliceblue;
+    width:960px;
+    margin:auto;
+    border:2px solid cornflowerblue;
+}
+
+header.primary{
+    background-color:aqua;
+    padding:20px;
+    background-image:url("../img/bg_1.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+
+}
