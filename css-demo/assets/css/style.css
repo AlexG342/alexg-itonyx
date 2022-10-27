@@ -1,20 +1,33 @@
-body{
-    background-color:rgb(156, 126, 190);
+body {
+    background-color:rgb(140, 92, 218);
     font-family: 'Lora', serif;
 }
 
-main{
-    background-color:aliceblue;
+main {
+    background-color:rgb(152, 185, 216);
     width:960px;
     margin:auto;
     border:2px solid cornflowerblue;
 }
 
-header.primary{
+header.primary {
     background-color:aqua;
     padding:20px;
     background-image:url("../img/bg_1.jpg");
     background-repeat:no-repeat;
     background-size:cover;
 
+}
+
+.hgroup h1, .hgroup h2{
+    margin:0;
+}
+
+.hgroup h1 a{
+    color:aliceblue;
+
+}
+
+.hgroup h2{
+    color:aliceblue
 }
