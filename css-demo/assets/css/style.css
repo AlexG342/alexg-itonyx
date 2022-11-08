@@ -1,6 +1,11 @@
 body {
-    background-color:rgb(140, 92, 218);
+    background-color:rgb(140, 122, 240);
     font-family: 'Lora', serif;
+}
+
+.container{
+    margin:auto;
+    padding:40px;
 }
 
 main {
@@ -16,6 +21,9 @@ header.primary {
     background-image:url("../img/bg_1.jpg");
     background-repeat:no-repeat;
     background-size:cover;
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
 
 }
 
@@ -30,4 +38,49 @@ header.primary {
 
 .hgroup h2{
     color:aliceblue
+}
+
+header.primary nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+header.primary nav ul a{
+    display:block;
+    background-color:rgb(188, 215, 241);
+    color:#fff;
+    border:1px solid rgb(81, 203, 207);
+    padding:10px 10px 10px 0;
+    margin-bottom:10px;
+    border-radius:20px 0;
+    border-right:10px solid rgb(78, 206, 223);
+    text-decoration:none;
+    text-align:right;
+}
+
+header.primary nav a:hover{
+    background-color:rgb(0, 0, 0);
+    text-decoration:underline;
+    
+}
+
+#content {
+    line-height:1.8;
+}
+
+#content h2, #content h3{
+    color:rgb(21, 57, 78);
+    border-left:7.5px rgb(26, 26, 133);
+    padding:5px 7px;
+    border-raidus:15px 0;
+}
+
+.img-right{
+    float:right;
+    border: 2px solid teal;
+    padding:5px;
+    border-radius:20px 0;
+    max-width:40%;
+    margin: 20px 0 20px 20px;
 }
