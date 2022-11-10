@@ -1,5 +1,5 @@
 body {
-    background-color:rgb(140, 122, 240);
+    background-color:rgb(107, 89, 212);
     font-family: 'Lora', serif;
 }
 
@@ -73,7 +73,7 @@ header.primary nav a:hover{
     color:rgb(21, 57, 78);
     border-left:7.5px rgb(26, 26, 133);
     padding:5px 7px;
-    border-raidus:15px 0;
+    border-radius:15px 0;
 }
 
 .img-right{
@@ -83,4 +83,37 @@ header.primary nav a:hover{
     border-radius:20px 0;
     max-width:40%;
     margin: 20px 0 20px 20px;
+}
+
+.img-right-full{
+    border: 2px solid paleturquoise;
+    padding:5px;
+    border-radius:20px 0;
+    max-width:100%;
+    margin:20px 0 20px 20px;
+}
+
+#blog{
+    background: rgb(147,66,171);
+background: linear-gradient(90deg, rgba(147,66,171,1) 20%, rgba(64,161,181,1) 100%);
+padding:20px 0;
+border-top: 6px double #000;
+border-bottom: 6px double #000;
+}
+
+#blog > h2{
+    color:mediumpurple;
+    text-shadow:2px 2px #000;
+    font-size:2.2rem;
+    margin-left:20px;
+}
+
+#blog article.post{
+    background:#fff;
+    margin:20px;
+    padding:20px;
+}
+
+#blog figure{
+    margin:0;
 }
