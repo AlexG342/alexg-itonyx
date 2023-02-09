@@ -29,6 +29,8 @@
                  // calculate the diameter
                  diameter = calcDiameter(radiusfp);
 
+                 diameter = calcCircumference(radiusfp);
+
                  // display the hypotenuse
                  document.getElementById("diameter").innerHTML = diameter.toString();
             }

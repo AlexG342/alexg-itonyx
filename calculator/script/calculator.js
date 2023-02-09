@@ -29,25 +29,17 @@ function calculate() {
         var result;
         
         /* if the operator was "Min" then set result to the minimum */
-        if (operator == "Add") {
-            result=(operand1fp+operand2fp);
+        if (operator == "+") {
+            result = (operand1fp + operand2fp)
         }
-        /* if the operator was "Max" then set result to the maximum */
-        if (operator == "Max") {
-            if(operand1fp >= operand2fp && operand1fp >= operand3fp) {
-                result = operand1fp;
-            }
-            if(operand2fp >= operand1fp && operand2fp >= operand3fp) {
-                result = operand2fp;
-            }
-            if(operand3fp >= operand1fp && operand3fp >= operand2fp) {
-                result = operand3fp;
-            }
+        if (operator == "-") {
+            result = (operand1fp - operand2fp)
         }
-
-        /* if operator was "Avg" the calcualute the average of 3 operands */
-        if (operator == "avg") {
-            result = (operand1fp + operand2fp);
+        if (operator == "*") {
+            result = (operand1fp * operand2fp)
+        }
+        if (operator == "/") {
+            result = (operand1fp / operand2fp)
         }
         
         /* convert the result to a string and display it */
@@ -64,7 +56,7 @@ function clearform() {
     document.getElementById("Operand2Error").innerHTML = "";
     document.getElementById("AddOperator").checked = false;
     document.getElementById("SubtractOperator").checked = false;
-    document.getElementById("MultiplyrOperator").checked = false;
+    document.getElementById("MultirOperator").checked = false;
     document.getElementById("DivideOperator").checked = false;
     document.getElementById("OperatorError").innerHTML = "";
     document.getElementById("Result").innerHTML = "";
