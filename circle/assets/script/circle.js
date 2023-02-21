@@ -29,7 +29,7 @@
                  // calculate the diameter
                  diameter = calcDiameter(radiusfp);
 
-                 diameter = calcCircumference(radiusfp);
+                 circumference = calcCircumference(radiusfp);
 
                  // display the hypotenuse
                  document.getElementById("diameter").innerHTML = diameter.toString();
@@ -42,13 +42,16 @@
           {
               return 2 * r;
           }
-          
+          function calcCircumference (r)
+          {
+            return r * 3.14;
+          }
           function clearForm()
         {
-            document.getElementById("leg1").value = "";
-            document.getElementById("leg1error").innerHTML = "";
-            document.getElementById("leg2").value = "";
-            document.getElementById("leg2error").innerHTML = "";
+            document.getElementById("radius").value = "";
+            document.getElementById("radiuserror").innerHTML = "";
+            document.getElementById("diameter").value = "";
+            document.getElementById("circumference").innerHTML = "";
             document.getElementById("hypotenuse").innerHTML = "";
         }
         
