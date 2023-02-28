@@ -22,36 +22,49 @@
 
                  // read in the legs as a string
                  radius = document.getElementById("radius").value;
+                 
+                 
 
                  // Convert numbers from strings to Floating Point
-                 radiusfp = parseFloat( radius ); 
+                 radiusfp = parseFloat(radius); 
 
                  // calculate the diameter
-                 diameter = calcDiameter(radiusfp);
-
-                 circumference = calcCircumference(radiusfp);
-
-                 // display the hypotenuse
-                 document.getElementById("diameter").innerHTML = diameter.toString();
+                 diameter = calcDiameter(radius);
+                document.getElementById("diameter").innerHTML = diameter.toString()
+                  
+                circumference = calcCircumference (radius);
+                document.getElementById("circumference").innerHTML = circumference.toString()
+                 
+                  area= calcArea (radius);
+                  document.getElementById("area").innerHTML = area.toString() 
             }
         }
 
-          function calcDiameter (r)
+          function calcDiameter (radius)
           // returns the diameter
           // 2 times the radius
           {
-              return 2 * r;
+              return 2 * radius;
           }
-          function calcCircumference (r)
+
+          function calcCircumference (radius)
           {
-            return r * 3.14;
+            return 2 * radius * Math.PI;
+
           }
+
+          function calcArea (radius)
+          {
+            return Math.PI * (radius * radius);
+          }
+          
           function clearForm()
         {
             document.getElementById("radius").value = "";
             document.getElementById("radiuserror").innerHTML = "";
             document.getElementById("diameter").value = "";
             document.getElementById("circumference").innerHTML = "";
+            document.getElementById("area").innerHTML = "";
             document.getElementById("hypotenuse").innerHTML = "";
         }
         
