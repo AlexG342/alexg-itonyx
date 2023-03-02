@@ -1,41 +1,56 @@
-<!doctype html>
-<html lang="eng">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Currency Value History</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Polygon - Company Details">
+    <meta name="keywords" content="HTML, CSS,JavaScript, AJAX, jQuery">
+    <meta name="author" content="Bruce Bauer">
+    <title>Currency</title>
+    <link href="style/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <main>
-        <h1>Currency Value History</h1>
-        <form id="Currency"></form>
-        <label for="BaseCurrency">Base Currency: </label>
-            <select name="BaseCurrency" id="Status" data-rule-required="true" data-msg-required="Base Currency is Required">
-            <option value="">Select an Currency...</option>
-            <option value="USD">USD</option>
-            <option value="CAD">CAD</option>
-            <option value="AUD">AUD</option>
-            <option value="MXN">MXN</option>
+    <form id="myform">
+        <div class="formcontainer">
+            <h2>Currency Value History</h2>
+            <label for="BaseCurrency" class="formlabel" >Base Currency: </label>
+            <select name="BaseCurrency" id="BaseCurrency" data-rule-required="true" data-msg-required="BaseCurrency is Required">
+            <option value="">Select a Currency...</option>
+            <option value="S">USD</option>
+            <option value="M">CAD</option>
+            <option value="D">AUD</option>
+            <option value="L">MXN</option>
             <label for="BaseCurrency" class="error"></label>
             </select>
-            <br>
-            <br>
-            <label for="ConvertCurrency">Convert to Currency: </label>
-            <select name="ConvertCurrency" id="Status" data-rule-required="true" data-msg-required="Convert To Currency is Required">
-            <option value="">Select an Currency...</option>
-            <option value="USD">USD</option>
-            <option value="CAD">CAD</option>
-            <option value="AUD">AUD</option>
-            <option value="MXN">MXN</option>
+            <label class="error" for="BaseCurrency" id="BaseCurrencyError"></label><br>
+
+            <label for="ConvertCurrency" class="formlabel" >Convert To Currency: </label>
+            <select name="ConvertCurrency" id="ConvertCurrency" data-rule-required="true" data-msg-required="ConvertCurrency is Required">
+            <option value="">Select a Currency...</option>
+            <option value="S">USD</option>
+            <option value="M">CAD</option>
+            <option value="D">AUD</option>
+            <option value="L">MXN</option>
             <label for="ConvertCurrency" class="error"></label>
             </select>
-            <br>
-            <br>
-            <input type="submit" id="Submit">
-            </form>
+            <label class="error" for="ConvertCurrency" id="ConvertCurrencyError"></label><br>
 
-
-
-
-
-    </body>
+            <label class="formlabel">From Date:</label>
+            <input type="date" name="FromDate" id="FromDate" 
+                data-rule-required="true" data-msg-required="From Date is Required">
+            <label id="FromDateError" for="FromDate" class="error"></label>
+            <label class="formlabel">To Date:</label>
+            <input type="date" name="ToDate" id="ToDate" 
+			     data-rule-required="true" data-msg-required="To Date is Required">
+		    <label id="ToDateError" for="ToDate" class="error"></label>
+            <br><br>
+            <input type="button" value="Show Results" id="Show Results" name="Show Results" onclick="GetResults();">
+            <input type="button" value="Clear" id="Clear" name="Clear" onclick="ClearForm();">
+            <hr>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
 </html>
