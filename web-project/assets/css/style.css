@@ -20,15 +20,16 @@ html {
   }
   
   body {
-    font-family: "Lato", sans-serif;
+    font-family: 'MotorBlock', sans-serif;
     margin: 0;
     line-height: 1.6;
+    background-color:hsl(0, 56%, 50%);
   }
   header.primary {
    background-color:hsl(0, 56%, 50%);
+   background-image:url("../img/armig.jpg");
     text-align: center;
     color: #ffffff;
-    background-image:url("../img/banner_bpm.jpg");
     background-repeat:no-repeat;
     background-size:cover;
     background-repeat:no-repeat;
@@ -43,9 +44,11 @@ html {
     color: #eeeeee;
     text-decoration: none;
   }
+
+  
   
   .button{
-    background-color: rgb(158, 37, 7);
+    background-color: rgb(0, 0, 0);
     border: none;
     color: rgb(0, 0, 0);
     font-size: 16px;
@@ -58,6 +61,25 @@ html {
   h2{
     text-align:center;
     
+  }
+  .slick-autoplay-toggle-button,
+  .slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+  .slick-dots li button .slick-dot-icon,
+  .slick-dots li.slick-active button .slick-dot-icon {
+    color: rgb(250, 250, 250);
+  }
+  
+  /* Customize Previous/Next/Dots/Autoplay - Active State */
+  
+  .slick-next:focus .slick-next-icon,
+  .slick-next:focus .slick-prev-icon,
+  .slick-prev:focus .slick-next-icon,
+  .slick-prev:focus .slick-prev-icon,
+  .slick-dots li button:focus .slick-dot-icon:before,
+  .slick-dots li.slick-active button:focus .slick-dot-icon,
+  .slick-autoplay-toggle-button:focus 
+  {
+      color:black;
   }
 
   .container {
