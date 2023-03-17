@@ -37,10 +37,8 @@ function getPhotos() {
                     if (numphotos > 0) {
                         for (var i = 0; i < 25; i++) {
                             if (i < numphotos) {
-                                // Note how we construct the name for image1, image2, etc...this sets the image source
                                 document.getElementById("image" + i).src = msg.photos[i].img_src;
                                 document.getElementById("anchor" + i).href = msg.photos[i].img_src;
-                                //do something to set the tool tip = msg.photos[i].camera.full_name;
                                 document.getElementById("image" + i).title = msg.photos[i].camera.full_name;
                                 document.getElementById("text1").innerHTML = msg.photos.length + " photos found";
                                 document.getElementById("text2").innerHTML = "Click a photo to display full size";
