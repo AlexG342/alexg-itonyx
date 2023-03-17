@@ -7,6 +7,8 @@ var ctx = document.getElementById("chartjs-0");
         var ToDate = document.getElementById("ToDate").value;
 
         document.getElementById("BaseCurrency").innerHTML = msg1.results.name;
+        document.getElementById("ConvertCurrency").innerHTML = msg1.results.name;
+
 
 var myChart = new Chart(ctx, {
     "type":"line",
