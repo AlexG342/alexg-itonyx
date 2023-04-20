@@ -137,6 +137,8 @@ color: black;
   margin:auto;
   padding:auto;
   text-align:center;
+  align-content: center;
+  
 }
 
 #About{
